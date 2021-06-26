@@ -1,0 +1,10 @@
+//export { default as User } from './User';
+//export { default as Subject } from './Subject';
+//export { default as Class } from './Class';
+export { default as Home } from './Home';
+export { Teacher as ClassSubjectStudent_Teacher, Student as ClassSubjectStudent_Student } from './ClassSubjectStudent';
+export { default as ClassSubject } from './ClassSubject';
+export { default as Term } from './Term';
+export { default as ClassSubjectTerm } from './ClassSubjectTerm';
+export { default as Mark } from './Mark';
+export { default as Account } from './Account';
