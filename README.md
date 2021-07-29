@@ -1,62 +1,84 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Tổng quan
+Ngày nay, ứng dụng của công nghệ thông tin và tin học hóa được xem là một trong những yếu tố mang tính quyết định đến hoạt động của một tổ chức, có thể tạo ra một bước đột phá mạnh mẽ.
+Cùng với sự phát triển kỹ thuật máy tính và mạng điện tử, công nghệ thông tin cũng được áp dụng trong nhiều lĩnh vực khác nhau. Mạng Internet là một trong những sản phẩm có giá trị to lớn và là một công cụ không thể thiếu, là nền tảng chính cho sự truyền tải, trao đổi thông tin trên toàn cầu.
+Ngày ngay việc sử dụng Internet là hết sức dễ dàng đối với mọi người trên mọi lứa tuổi, chỉ cần một thiết bị bất kỳ có kết nối mạng Internet và một vài đường tìm kiếm trên các bộ máy tìm kiếm thì ngay lập tức mọi thông tin mà bạn đang quan tâm và cần tìm hiểu sẽ hiện ra trước mắt. Chính vì thế mà các tổ chức luôn luôn ưu tiên chọn webiste là con đường nhanh nhất và dễ dàng nhất có thể truyền thông về sự tồn tại của mình, và công việc đào tạo cũng thế.
+# Đối tượng sử dụng
+- Sinh viên: Truy cập vào các chức năng dành cho sinh viên như xem danh sách lớp học phần đang học, xem điểm và đăng ký tín chỉ.
+- Giảng viên: Truy cập vào các chức năng dành cho giảng viên như xem danh sách lớp học phần đang giảng dạy và chấm điểm sinh viên.
+- Admin: Tài khoản truy cập được quyền của hệ thống như quản lý tài khoản, quản lý học phần, quản lý lớp sinh hoạt, quản lý lớp học phần, quản lý học kì, và quản lý log thông tin.
+# Yêu cầu chức năng
+- Sinh viên: Đăng nhập, quên mật khẩu, đăng ký tín chỉ, xem kết quả môn học, xem lớp học phần.
+- Giảng viên: Đăng nhập, quên mật khẩu, xem lớp học phần, Cập nhật điểm số.
+- Admin: Đăng nhập, quên mật khẩu, quản lý tài khoản, quản lý lớp, quản lý môn học, tạo học kỳ, quản lý điểm, tạo đợt đăng ký tín chỉ và quản lý logs.
+# Cơ sở dữ liệu
+<div align="center">
+  <img src="https://github.com/jennydo2000/Laravel-DoAnPhanMem1/blob/master/shortcuts/database.png">
+</div>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Một số hình ảnh
+<h3>Trang chưa đăng nhập</h3>
+<div align="center">
+  <img src="https://github.com/jennydo2000/Laravel-DoAnPhanMem1/blob/master/shortcuts/guest.png">
+</div>
+<h3>Trang chưa đăng nhập</h3>
+<div align="center">
+  <img src="https://github.com/jennydo2000/Laravel-DoAnPhanMem1/blob/master/shortcuts/guest.png">
+</div>
+<h3>Tài khoản</h3>
+<div align="center">
+  <img src="https://github.com/jennydo2000/Laravel-DoAnPhanMem1/blob/master/shortcuts/account.png">
+</div>
 
-## About Laravel
+## Admin
+<h3>Quản lý tài khoản</h3>
+<div align="center">
+  <img src="https://github.com/jennydo2000/Laravel-DoAnPhanMem1/blob/master/shortcuts/admin-account.png">
+</div>
+<h3>Quản lý học phần</h3>
+<div align="center">
+  <img src="https://github.com/jennydo2000/Laravel-DoAnPhanMem1/blob/master/shortcuts/admin-subject.png">
+</div>
+<h3>Quản lý lớp sinh hoạt</h3>
+<div align="center">
+  <img src="https://github.com/jennydo2000/Laravel-DoAnPhanMem1/blob/master/shortcuts/admin-class.png">
+</div>
+<h3>Quản lý lớp học phần</h3>
+<div align="center">
+  <img src="https://github.com/jennydo2000/Laravel-DoAnPhanMem1/blob/master/shortcuts/admin-class-subject.png">
+</div>
+<h3>Quản lý học kì</h3>
+<div align="center">
+  <img src="https://github.com/jennydo2000/Laravel-DoAnPhanMem1/blob/master/shortcuts/admin-term.png">
+</div>
+<h3>Quản lý log</h3>
+<div align="center">
+  <img src="https://github.com/jennydo2000/Laravel-DoAnPhanMem1/blob/master/shortcuts/admin-log.png">
+</div>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Sinh viên
+<h3>Xem lớp học phần</h3>
+<div align="center">
+  <img src="https://github.com/jennydo2000/Laravel-DoAnPhanMem1/blob/master/shortcuts/student-class-subject.png">
+</div>
+<h3>Xem điểm</h3>
+<div align="center">
+  <img src="https://github.com/jennydo2000/Laravel-DoAnPhanMem1/blob/master/shortcuts/student-mark.png">
+</div>
+<h3>Đăng ký tín chỉ</h3>
+<div align="center">
+  <img src="https://github.com/jennydo2000/Laravel-DoAnPhanMem1/blob/master/shortcuts/student-register.png">
+</div>
+<h3>In phiếu đăng ký tín chỉ</h3>
+<div align="center">
+  <img src="https://github.com/jennydo2000/Laravel-DoAnPhanMem1/blob/master/shortcuts/student-print-register.png">
+</div>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Giảng viên
+<h3>Xem lớp học phần</h3>
+<div align="center">
+  <img src="https://github.com/jennydo2000/Laravel-DoAnPhanMem1/blob/master/shortcuts/teacher-class-subject.png">
+</div>
+<h3>Quản lý sinh viên trong lớp học phần</h3>
+<div align="center">
+  <img src="https://github.com/jennydo2000/Laravel-DoAnPhanMem1/blob/master/shortcuts/teacher-student.png">
+</div>
